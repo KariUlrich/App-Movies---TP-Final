@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import Nav from "./componentes/Nav";
+import Buscar from "./componentes/Buscar";
+import Home from "./componentes/Home";
+import Populares from "./componentes/Populares";
+import UltimosLanzamientos from "./componentes/UltimosLanzamientos";
+import Footer from "./componentes/Footer";
+import DetallePelicula from "./componentes/DetallePelicula";
+import "./App.scss";
 
-function App() {
+const claveApi = "0f992db40ce22ab302880645bfa455bf";
+const urlApi =
+  "https://api.themoviedb.org/3/movie/550?api_key=0f992db40ce22ab302880645bfa455bf";
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="body">
+      <BrowserRouter>
+        <Nav />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/new-movies" element={<UltimosLanzamientos />} />
+          <Route path="/popular" element={<Populares />} />
+          <Route path="/search" element={<Buscar />} />
+          <Route path="/movie/:id" element={<DetallePelicula />} />
+        </Routes>
+      </BrowserRouter>
+      <Footer />
     </div>
   );
-}
+};
 
 export default App;

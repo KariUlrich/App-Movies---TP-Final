@@ -1,0 +1,26 @@
+@import "Variables";
+
+.nav-bar {
+  height: 100px;
+  background-color: $color-principal;
+  display: flex;
+}
+
+button {
+  padding: 20px;
+  margin: 20px;
+  background-color: $color-principal;
+  border: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 18px;
+}
+a {
+  text-decoration: none;
+  color: rgb(240, 240, 174);
+}
+
+.imagen-movie {
+  margin-left: 30px;
+  margin-right: 10px;
+  padding: 10px;
+}

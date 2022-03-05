@@ -1,0 +1,33 @@
+@import "Variables";
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.input-peli{
+    border-radius: 20px;
+    border: 3px  solid $color-principal; 
+    width: 400px;
+    height: 30px;
+    padding: 5px;
+    font-size: 20px;
+    margin-right: 15px;
+    outline: none;
+}
+
+.boton-submit{
+    background-color: $color-principal;
+    color: white;
+    font-size: 40px;
+    padding: 10px;
+    padding-bottom: 4px;
+    width: 70px;
+    height: 70px;
+    border-radius: 25px;
+    margin: 0px;
+    cursor: pointer;
+    
+}
