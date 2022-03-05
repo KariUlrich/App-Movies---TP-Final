@@ -1,9 +1,14 @@
+import { Link } from "react-router-dom";
+import Tarjeta from "./Tarjeta";
+
 const PresentacionPeliculas = ({ titulo, peliculas }) => {
   return (
     <div>
       <h1>{titulo}</h1>
       {peliculas.map((pelicula) => (
-        <h3>{pelicula.title}</h3>
+        <Link to={`/movie/:id/${pelicula.id}`}>
+          <Tarjeta key={pelicula.id} titulo={pelicula.title} />
+        </Link>
       ))}
     </div>
   );
