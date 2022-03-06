@@ -1,8 +1,8 @@
-const Tarjeta = ({ titulo }) => {
+const Tarjeta = ({ titulo, imagen }) => {
   return (
     <div>
-      {titulo}
-      <h3>soy una foto</h3>
+      <p>{titulo}</p>
+      <img src={imagen}></img>
     </div>
   );
 };

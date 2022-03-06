@@ -7,7 +7,11 @@ const PresentacionPeliculas = ({ titulo, peliculas }) => {
       <h1>{titulo}</h1>
       {peliculas.map((pelicula) => (
         <Link to={`/movie/:id/${pelicula.id}`}>
-          <Tarjeta key={pelicula.id} titulo={pelicula.title} />
+          <Tarjeta
+            key={pelicula.id}
+            titulo={pelicula.title}
+            imagen={`https://image.tmdb.org/t/p/w300/${pelicula.poster_path}`}
+          />
         </Link>
       ))}
     </div>
