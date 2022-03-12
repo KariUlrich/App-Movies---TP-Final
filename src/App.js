@@ -19,7 +19,7 @@ const App = () => {
         <Nav />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/new-movies" element={<UltimosLanzamientos />} />
+          <Route path="/new" element={<UltimosLanzamientos />} />
           <Route path="/popular" element={<Populares />} />
           <Route path="/search" element={<Buscar />} />
           <Route path="/movie/:id" element={<DetallePelicula />} />

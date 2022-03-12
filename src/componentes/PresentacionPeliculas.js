@@ -1,16 +1,17 @@
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Tarjeta from "./Tarjeta";
 
-const PresentacionPeliculas = ({ titulo, peliculas }) => {
+const PresentacionPeliculas = ({ titulo, peliculasYSeries }) => {
   return (
     <div>
       <h1>{titulo}</h1>
-      {peliculas.map((pelicula) => (
-        <Link to={`/movie/:id/${pelicula.id}`}>
+      {peliculasYSeries.map((peliculaYSerie) => (
+        <Link to={`/movie/:id/${peliculaYSerie.id}`}>
           <Tarjeta
-            key={pelicula.id}
-            titulo={pelicula.title}
-            imagen={`https://image.tmdb.org/t/p/w300/${pelicula.poster_path}`}
+            key={peliculaYSerie.id}
+            titulo={peliculaYSerie.title}
+            imagen={`https://image.tmdb.org/t/p/w300/${peliculaYSerie.poster_path}`}
           />
         </Link>
       ))}
