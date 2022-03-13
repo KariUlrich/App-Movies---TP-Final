@@ -6,12 +6,22 @@ import "../styles/Item.scss";
 const Item = ({ imagen, titulo, link, nombre }) => {
   return (
     <div className="item">
-      <img className="img-item" src={imagen}></img>
-      <p>{titulo}</p>
-      <p>{nombre}</p>
-      <Link to={link}>
-        <FaInfoCircle className="icono-detalle" />
-      </Link>
+      <ul>
+        <li>
+          <div className="item-completo">
+            <div className="img-titulo-nombre">
+              <img className="img-item" src={imagen} alt="imagen vista"></img>
+              <p>{titulo}</p>
+              <p>{nombre}</p>
+            </div>
+            <div className="link-item">
+              <Link to={link}>
+                <FaInfoCircle className="icono-detalle" />
+              </Link>
+            </div>
+          </div>
+        </li>
+      </ul>
     </div>
   );
 };

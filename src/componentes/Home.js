@@ -6,7 +6,6 @@ import "../styles/Home.scss";
 const Home = () => {
   return (
     <div className="home">
-      {/* <p>Home</p> */}
       <Carousel />
       <div className="lista-peliculas-series">
         <ListaPeliculasYSeries

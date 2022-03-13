@@ -22,7 +22,7 @@ const App = () => {
           <Route path="/new" element={<UltimosLanzamientos />} />
           <Route path="/popular" element={<Populares />} />
           <Route path="/search" element={<Buscar />} />
-          <Route path="/movie/:id" element={<DetallePeliculaYSerie />} />
+          <Route path="/movie/:idPYS" element={<DetallePeliculaYSerie />} />
         </Routes>
       </BrowserRouter>
       <Footer />

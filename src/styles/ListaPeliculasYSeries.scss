@@ -1,0 +1,19 @@
+@import "Variables";
+
+.lista {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: 500px;
+  width: 40%;
+  border: 3px solid $color-principal;
+  margin-top: 50px;
+  overflow: scroll;
+  h1 {
+    background-color: $color-principal;
+    color: white;
+    padding: 10px;
+    margin: 0;
+    font-size: 20px;
+  }
+}

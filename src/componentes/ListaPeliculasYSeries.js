@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Item from "./Item";
+import "../styles/ListaPeliculasYSeries.scss";
 
 const ListaPeliculasYSeries = ({ titulo, url }) => {
   const [peliculasYSeries, setPeliculasYSeries] = useState([]);
@@ -12,14 +13,14 @@ const ListaPeliculasYSeries = ({ titulo, url }) => {
       .then((data) => setPeliculasYSeries(data.results));
   }, []);
   return (
-    <div>
+    <div className="lista">
       <h1>{titulo}</h1>
       {peliculasYSeries.map((peliculaYSerie) => (
         <Item
           key={peliculaYSerie.id}
           titulo={peliculaYSerie.title}
           nombre={peliculaYSerie.name}
-          imagen={`https://image.tmdb.org/t/p/w300/${peliculaYSerie.poster_path}`}
+          imagen={`https://image.tmdb.org/t/p/w200/${peliculaYSerie.poster_path}`}
           link={`/movie/${peliculaYSerie.id}`}
         />
       ))}
