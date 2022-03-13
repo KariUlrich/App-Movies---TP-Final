@@ -1,4 +1,3 @@
-import DetallePelicula from "./DetallePelicula";
 import ListaPeliculasYSeries from "./ListaPeliculasYSeries";
 import Carousel from "./Carousel";
 
@@ -19,7 +18,6 @@ const Home = () => {
           url="tv/top_rated"
         />
       </div>
-      <DetallePelicula />
     </div>
   );
 };

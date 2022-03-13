@@ -9,18 +9,20 @@ const Nav = () => {
         src="https://cdn-icons-png.flaticon.com/512/306/306337.png"
         alt="movie"
       ></img>
-      <button>
-        <Link to="/">Home</Link>
-      </button>
-      <button>
-        <Link to="/new">Ultmos Lanzamientos</Link>
-      </button>
-      <button>
-        <Link to="/popular">Populares</Link>
-      </button>
-      <button>
-        <Link to="/search">Buscar</Link>
-      </button>
+      <ul className="li-botones">
+        <li>
+          <Link to="/">Home</Link>
+        </li>
+        <li>
+          <Link to="/new">Ultmos Lanzamientos</Link>
+        </li>
+        <li>
+          <Link to="/popular">Populares</Link>
+        </li>
+        <li>
+          <Link to="/search">Buscar</Link>
+        </li>
+      </ul>
     </div>
   );
 };

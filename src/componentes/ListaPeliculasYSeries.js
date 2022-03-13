@@ -20,7 +20,7 @@ const ListaPeliculasYSeries = ({ titulo, url }) => {
           titulo={peliculaYSerie.title}
           nombre={peliculaYSerie.name}
           imagen={`https://image.tmdb.org/t/p/w300/${peliculaYSerie.poster_path}`}
-          link={`/movie/:id/${peliculaYSerie.id}`}
+          link={`/movie/${peliculaYSerie.id}`}
         />
       ))}
     </div>
@@ -28,4 +28,5 @@ const ListaPeliculasYSeries = ({ titulo, url }) => {
 };
 
 export default ListaPeliculasYSeries;
-//
+
+// link={`/movie/:idPYS/${peliculaYSerie.id}`}

@@ -7,7 +7,7 @@ const PresentacionPeliculas = ({ titulo, peliculasYSeries }) => {
     <div>
       <h1>{titulo}</h1>
       {peliculasYSeries.map((peliculaYSerie) => (
-        <Link to={`/movie/:id/${peliculaYSerie.id}`}>
+        <Link to={`/movie/:idPYS/${peliculaYSerie.id}`}>
           <Tarjeta
             key={peliculaYSerie.id}
             titulo={peliculaYSerie.title}

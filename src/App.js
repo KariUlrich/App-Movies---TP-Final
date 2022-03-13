@@ -5,7 +5,7 @@ import Home from "./componentes/Home";
 import Populares from "./componentes/Populares";
 import UltimosLanzamientos from "./componentes/UltimosLanzamientos";
 import Footer from "./componentes/Footer";
-import DetallePelicula from "./componentes/DetallePelicula";
+import DetallePeliculaYSerie from "./componentes/DetallePeliculaYSerie";
 import "./App.scss";
 
 const claveApi = "0f992db40ce22ab302880645bfa455bf";
@@ -22,7 +22,7 @@ const App = () => {
           <Route path="/new" element={<UltimosLanzamientos />} />
           <Route path="/popular" element={<Populares />} />
           <Route path="/search" element={<Buscar />} />
-          <Route path="/movie/:id" element={<DetallePelicula />} />
+          <Route path="/movie/:id" element={<DetallePeliculaYSerie />} />
         </Routes>
       </BrowserRouter>
       <Footer />
