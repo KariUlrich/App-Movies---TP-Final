@@ -40,7 +40,7 @@ const Carousel = () => {
               <p>{pelicula.overview}</p>
               <button>
                 <Link to={`/movie/:id/${pelicula.id}`}></Link>
-                Ver mas..
+                Ver mas...
               </button>
             </div>
           </div>
