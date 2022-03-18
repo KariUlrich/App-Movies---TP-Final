@@ -14,7 +14,7 @@ const ListaPeliculasYSeries = ({ titulo, url }) => {
   }, []);
   return (
     <div className="lista">
-      <h1>{titulo}</h1>
+      <h2>{titulo}</h2>
       {peliculasYSeries.map((peliculaYSerie) => (
         <Item
           key={peliculaYSerie.id}
