@@ -4,7 +4,11 @@ import Buscar from "./componentes/Buscar";
 import Home from "./componentes/Home";
 import Populares from "./componentes/Populares";
 import PeliculasPopulares from "./componentes/PeliculasPopulares";
+import SeriesPopulares from "./componentes/SeriesPopulares";
 import UltimosLanzamientos from "./componentes/UltimosLanzamientos";
+import PeliculasUltimosLanzamientos from "./componentes/PeliculasUltimosLanzamientos";
+import SeriesUltimosLanzamientos from "./componentes/SeriesUltimosLanzamientos";
+
 import Footer from "./componentes/Footer";
 import DetallePeliculaYSerie from "./componentes/DetallePeliculaYSerie";
 import "./App.scss";

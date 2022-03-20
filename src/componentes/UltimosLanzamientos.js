@@ -17,7 +17,7 @@ const UltimosLanzamientos = () => {
         <>
           <PresentacionPeliculas
             link={"/movie/now_playing/page/1"}
-            titulo="Ultimos Lanow_playingnzamientos de Peliculas"
+            titulo="Ultimos Lanzamientos de Peliculas"
             peliculasYSeries={cortarArrayPeliculas(peliculas)}
           />
           <PresentacionPeliculas
