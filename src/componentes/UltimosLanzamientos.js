@@ -16,12 +16,12 @@ const UltimosLanzamientos = () => {
       {!isLoadingGeneral && (
         <>
           <PresentacionPeliculas
-            link={"/movie/popular/page/1"}
-            titulo="Ultimos Lanzamientos de Peliculas"
+            link={"/movie/now_playing/page/1"}
+            titulo="Ultimos Lanow_playingnzamientos de Peliculas"
             peliculasYSeries={cortarArrayPeliculas(peliculas)}
           />
           <PresentacionPeliculas
-            link={"/movie/popular/page/1"}
+            link={"/tv/airing_today/page/1"}
             titulo="Ultimos Lanzamientos de Series"
             peliculasYSeries={cortarArrayPeliculas(series)}
           />

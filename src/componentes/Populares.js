@@ -21,7 +21,7 @@ const Populares = () => {
             peliculasYSeries={cortarArrayPeliculas(peliculas)}
           />
           <PresentacionPeliculas
-            link={"/movie/popular/page/1"}
+            link={"/tv/popular/page/1"}
             titulo="Series Populares"
             peliculasYSeries={cortarArrayPeliculas(series)}
           />

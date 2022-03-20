@@ -9,7 +9,7 @@ const PresentacionPeliculas = ({ titulo, peliculasYSeries, link }) => {
       <Link to={link}>
         <div className="link-lista">
           <h2>{titulo}</h2>
-          <FaArrowCircleRight className="icono-detalle" />
+          <FaArrowCircleRight className="icono-listado" />
         </div>
       </Link>
       <div className="contenedor-tarjeta">
