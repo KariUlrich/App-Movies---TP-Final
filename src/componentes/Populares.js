@@ -1,6 +1,8 @@
 import useFetchPYS from "../hook/useFetchPYS";
 import PresentacionPeliculas from "./PresentacionPeliculas";
 import Loader from "./Loader";
+import "../styles/Populares.scss";
+import { cortarArrayPeliculas } from "../utils/variables";
 
 const Populares = () => {
   const [peliculas, isLoading] = useFetchPYS("movie", "popular");
@@ -9,17 +11,19 @@ const Populares = () => {
   const isLoadingGeneral = isLoading || isLoadingseries;
 
   return (
-    <div>
+    <div className="cargando">
       <Loader isLoading={isLoadingGeneral} />
       {!isLoadingGeneral && (
         <>
           <PresentacionPeliculas
+            link={"/movie/popular/page/1"}
             titulo="Peliculas Populares"
-            peliculasYSeries={peliculas}
+            peliculasYSeries={cortarArrayPeliculas(peliculas)}
           />
           <PresentacionPeliculas
+            link={"/movie/popular/page/1"}
             titulo="Series Populares"
-            peliculasYSeries={series}
+            peliculasYSeries={cortarArrayPeliculas(series)}
           />
         </>
       )}

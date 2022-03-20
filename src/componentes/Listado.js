@@ -1,18 +1,11 @@
 import { Link } from "react-router-dom";
 import Tarjeta from "./Tarjeta";
-import "../styles/PresentacionPelicula.scss";
-import { FaArrowCircleRight } from "react-icons/fa";
 
-const PresentacionPeliculas = ({ titulo, peliculasYSeries, link }) => {
+const Listado = ({ titulo, peliculasYSeries }) => {
   return (
-    <div className="contenedor-presentacion">
-      <Link to={link}>
-        <div className="link-lista">
-          <h2>{titulo}</h2>
-          <FaArrowCircleRight className="icono-detalle" />
-        </div>
-      </Link>
-      <div className="contenedor-tarjeta">
+    <div className="contenedor-listado">
+      <h2>{titulo}</h2>
+      <div className="contenedor-listado">
         {peliculasYSeries.map((peliculaYSerie) => (
           <Link to={`/movie/:idPYS/${peliculaYSerie.id}`}>
             <Tarjeta
@@ -28,4 +21,4 @@ const PresentacionPeliculas = ({ titulo, peliculasYSeries, link }) => {
   );
 };
 
-export default PresentacionPeliculas;
+export default Listado;

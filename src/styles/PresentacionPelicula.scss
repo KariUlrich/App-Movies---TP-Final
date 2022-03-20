@@ -1,7 +1,20 @@
-.contenedor-presetnacion {
+@import "Variables";
+.contenedor-presentacion {
+  margin-left: 20px;
   margin-top: 60px;
 }
 
 .contenedor-tarjeta {
   display: flex;
+}
+.link-lista {
+  display: flex;
+  align-items: center;
+  .FaArrowCircleRight {
+    opacity: 0.5;
+  }
+  h2 {
+    margin-right: 10px;
+    color: $color-principal;
+  }
 }
