@@ -22,7 +22,15 @@ const App = () => {
             path="/movie/popular/page/1"
             element={<PeliculasPopulares />}
           />
-          <Route path="/tv/popular/page/1" element={<PeliculasPopulares />} />
+          <Route path="/tv/popular/page/1" element={<SeriesPopulares />} />
+          <Route
+            path="/movie/now_playing/page/1"
+            element={<PeliculasUltimosLanzamientos />}
+          />
+          <Route
+            path="/tv/airing_today/page/1"
+            element={<SeriesUltimosLanzamientos />}
+          />
           <Route path="/search" element={<Buscar />} />
           <Route path="/movie/:idPYS" element={<DetallePeliculaYSerie />} />
         </Routes>
