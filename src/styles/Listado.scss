@@ -1,0 +1,15 @@
+@import "Mixing";
+@import "Variables";
+
+.contenedor-listado {
+  @include flex($direction: column);
+  margin-top: $margen-top;
+  h2 {
+    color: $color-principal;
+  }
+}
+.listado {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: $margen-izq;
+}
