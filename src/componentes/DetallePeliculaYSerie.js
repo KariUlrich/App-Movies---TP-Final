@@ -12,25 +12,33 @@ const DetallePeliculaYSerie = () => {
     )
       .then((res) => res.json())
       .then((data) => setPeliculaYSerie(data));
+    // console.log(data));
   }, []);
 
   return (
-    <div className="contenedor-imagen-detalle-grande">
-      <div>
+    <div className="contenedor-imagen-detalle-fondo">
+      <div className="contenedor-imagen-fondo">
         <img
-          src={`https://image.tmdb.org/t/p/w500/${peliculaYSerie.poster_path}`}
+          src={`https://image.tmdb.org/t/p/w300/${peliculaYSerie.poster_path}`}
           alt="detalle de pelicula fondo"
           className="imagen-detalle-fondo"
         ></img>
-        <div>
-          <div>
-            <img
-              src={`https://image.tmdb.org/t/p/w300/${peliculaYSerie.poster_path}`}
-              alt="detalle de pelicula card"
-            ></img>
-          </div>
-          <h2>{peliculaYSerie.title}</h2>
-          <h2>{peliculaYSerie.name}</h2>
+      </div>
+      <div className="contendor-detalle">
+        <div className="contenedor-imagen-chica">
+          <img
+            src={`https://image.tmdb.org/t/p/w300/${peliculaYSerie.poster_path}`}
+            alt="detalle de pelicula card"
+          ></img>
+        </div>
+        <div className="detalle">
+          <h2>
+            {peliculaYSerie.title ? peliculaYSerie.title : peliculaYSerie.name}
+          </h2>
+          <h3>Descripción</h3>
+          <p>{peliculaYSerie.overview}</p>
+          <h3>Generos</h3>
+          {/* <p>{peliculaYSerie.genres}</p> */}
         </div>
       </div>
     </div>
