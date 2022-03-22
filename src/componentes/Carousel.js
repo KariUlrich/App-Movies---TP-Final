@@ -10,7 +10,7 @@ const Carousel = () => {
 
   useEffect(() => {
     fetch(
-      `https://api.themoviedb.org/3/movie/upcoming/?api_key=0f992db40ce22ab302880645bfa455bf&language=es-AR&page=1`
+      `https://api.themoviedb.org/3/movie/upcoming/?api_key=0f992db40ce22ab302880645bfa455bf&language=es-ES&page=1`
     )
       .then((res) => res.json())
       .then((data) => setPeliculas(data.results));
@@ -30,11 +30,18 @@ const Carousel = () => {
       >
         {peliculas.map((pelicula) => (
           <div key={pelicula.id} className="slick-container">
-            <div className="slick-img">
-              <img
-                src={`https://image.tmdb.org/t/p/w500/${pelicula.poster_path}`}
-              ></img>
-            </div>
+            <div
+              className="slick-img"
+              style={{
+                backgroundImage:
+                  "url(" +
+                  `https://image.tmdb.org/t/p/original/${pelicula.poster_path}` +
+                  ")",
+                backgroundRepeat: "no-repeat",
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+              }}
+            ></div>
             <div className="slick-descripcion">
               <h3>{pelicula.title}</h3>
               <p>{pelicula.overview}</p>

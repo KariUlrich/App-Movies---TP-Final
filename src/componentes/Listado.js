@@ -8,9 +8,11 @@ const Listado = ({ titulo, peliculasYSeries }) => {
       <h2>{titulo}</h2>
       <div className="listado">
         {peliculasYSeries.map((peliculaYSerie) => (
-          <Link to={`/movie/:idPYS/${peliculaYSerie.id}`}>
+          <Link
+            key={peliculaYSerie.id}
+            to={`/movie/:idPYS/${peliculaYSerie.id}`}
+          >
             <Tarjeta
-              key={peliculaYSerie.id}
               titulo={peliculaYSerie.title}
               nombre={peliculaYSerie.name}
               imagen={`https://image.tmdb.org/t/p/w300/${peliculaYSerie.poster_path}`}

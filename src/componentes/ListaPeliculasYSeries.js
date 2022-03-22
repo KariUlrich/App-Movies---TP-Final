@@ -7,7 +7,7 @@ const ListaPeliculasYSeries = ({ titulo, url }) => {
 
   useEffect(() => {
     fetch(
-      `https://api.themoviedb.org/3/${url}?api_key=0f992db40ce22ab302880645bfa455bf&language=es-AR&page=1`
+      `https://api.themoviedb.org/3/${url}?api_key=0f992db40ce22ab302880645bfa455bf&language=es-ES&page=1`
     )
       .then((res) => res.json())
       .then((data) => setPeliculasYSeries(data.results));
