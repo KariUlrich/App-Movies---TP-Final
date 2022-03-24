@@ -24,7 +24,7 @@ const DetallePeliculaYSerie = () => {
         style={{
           backgroundImage:
             "url(" +
-            `https://image.tmdb.org/t/p/original/${peliculaYSerie.poster_path}` +
+            `https://image.tmdb.org/t/p/original/${peliculaYSerie.backdrop_path}` +
             ")",
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
@@ -46,10 +46,12 @@ const DetallePeliculaYSerie = () => {
           <p>Duración: {peliculaYSerie.runtime} min</p>
           <h3>Descripción</h3>
           <p>{peliculaYSerie.overview}</p>
-          {peliculaYSerie.genres &&
-            peliculaYSerie.genres.map((genero) => {
-              <h3>Generos:{genero.name}</h3>;
-            })}
+          <h3> Géneros:</h3>
+          <div>
+            {peliculaYSerie.genres?.map((genero) => (
+              <p key={genero.id}>{genero.name}</p>
+            ))}
+          </div>
         </div>
       </div>
     </div>
