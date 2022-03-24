@@ -46,7 +46,7 @@ const DetallePeliculaYSerie = () => {
           <p>Duración: {peliculaYSerie.runtime} min</p>
           <h3>Descripción</h3>
           <p>{peliculaYSerie.overview}</p>
-          <h3> Géneros:</h3>
+          <h4> Géneros:</h4>
           <div>
             {peliculaYSerie.genres?.map((genero) => (
               <p key={genero.id}>{genero.name}</p>
