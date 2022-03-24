@@ -2,10 +2,14 @@ import { useSearchParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import "../styles/Buscar.scss";
 import { BsSearch } from "react-icons/bs";
+// import Paginado from "./Paginado";
+// import usePaginado from "../hook/usePaginado";
 
 const Buscar = () => {
   const [searchParams, setSearchParams] = useSearchParams({ busqueda: "" });
   const [valorDelInput, setValorDelInput] = useState("");
+  // const { page, handleClickNext, handleClickPrev, handleClickFirstPage, handleClickLastPage } = usePaginado();
+  // const [series, isLoading, totalPages] = useFetchPYS("tv", "popular", page);
 
   const handleChange = (e) => {
     setValorDelInput(e.target.value);
@@ -34,6 +38,14 @@ const Buscar = () => {
           <BsSearch />{" "}
         </button>
       </form>
+      {/* <Paginado
+        handleClickPrev={handleClickPrev}
+        handleClickNext={handleClickNext}
+        handleClickFirstPage={handleClickFirstPage}
+        handleClickLastPage={handleClickLastPage}
+        page={page}
+        totalPages={totalPages}
+      /> */}
     </div>
   );
 };

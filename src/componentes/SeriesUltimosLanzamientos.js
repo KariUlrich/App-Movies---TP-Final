@@ -1,10 +1,19 @@
 import useFetchPYS from "../hook/useFetchPYS";
 import Listado from "./Listado";
 import Loader from "./Loader";
+import Paginado from "./Paginado";
+import usePaginado from "../hook/usePaginado";
 // import "../styles/PeliculasPopulares.scss";
 
 const SeriesUltimosLanzamientos = () => {
-  const [series, isLoading] = useFetchPYS("tv", "popular");
+  const {
+    page,
+    handleClickNext,
+    handleClickPrev,
+    handleClickFirstPage,
+    handleClickLastPage,
+  } = usePaginado();
+  const [series, isLoading, totalPages] = useFetchPYS("tv", "popular", page);
 
   return (
     <div className="">
@@ -15,6 +24,14 @@ const SeriesUltimosLanzamientos = () => {
           peliculasYSeries={series}
         />
       )}
+      <Paginado
+        handleClickPrev={handleClickPrev}
+        handleClickNext={handleClickNext}
+        handleClickFirstPage={handleClickFirstPage}
+        handleClickLastPage={handleClickLastPage}
+        page={page}
+        totalPages={totalPages}
+      />
     </div>
   );
 };
