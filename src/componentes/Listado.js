@@ -8,10 +8,7 @@ const Listado = ({ titulo, peliculasYSeries }) => {
       <h2>{titulo}</h2>
       <div className="listado">
         {peliculasYSeries.map((peliculaYSerie) => (
-          <Link
-            key={peliculaYSerie.id}
-            to={`/movie/:idPYS/${peliculaYSerie.id}`}
-          >
+          <Link key={peliculaYSerie.id} to={`/movie/${peliculaYSerie.id}`}>
             <Tarjeta
               titulo={peliculaYSerie.title}
               nombre={peliculaYSerie.name}
@@ -25,3 +22,5 @@ const Listado = ({ titulo, peliculasYSeries }) => {
 };
 
 export default Listado;
+
+// {`/movie/:idPYS/${peliculaYSerie.id}
