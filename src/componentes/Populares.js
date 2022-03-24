@@ -5,8 +5,8 @@ import "../styles/Populares.scss";
 import { cortarArrayPeliculas } from "../utils/variables";
 
 const Populares = () => {
-  const [peliculas, isLoading] = useFetchPYS("movie", "popular");
-  const [series, isLoadingseries] = useFetchPYS("tv", "popular");
+  const [peliculas, isLoading] = useFetchPYS("movie", "popular", "page");
+  const [series, isLoadingseries] = useFetchPYS("tv", "popular", "page");
 
   const isLoadingGeneral = isLoading || isLoadingseries;
 

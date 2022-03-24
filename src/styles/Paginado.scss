@@ -1,0 +1,23 @@
+@import "Variables";
+@import "Mixing";
+
+.botones-paginado {
+  @include flex($direction: row);
+  margin-top: 10px;
+  color: $color-principal;
+  font-size: 22px;
+
+  button {
+    padding: 5px;
+    margin: 20px;
+    background-color: $color-principal;
+    border-radius: 50%;
+    border: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+  }
+}
+.boton-paginado {
+  font-size: 50px;
+  color: $color-secundario;
+}
