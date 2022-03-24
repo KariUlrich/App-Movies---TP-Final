@@ -14,10 +14,7 @@ const PresentacionPeliculas = ({ titulo, peliculasYSeries, link }) => {
       </Link>
       <div className="contenedor-tarjeta">
         {peliculasYSeries.map((peliculaYSerie) => (
-          <Link
-            key={peliculaYSerie.id}
-            to={`/movie/:idPYS/${peliculaYSerie.id}`}
-          >
+          <Link key={peliculaYSerie.id} to={`/movie/${peliculaYSerie.id}`}>
             <Tarjeta
               titulo={peliculaYSerie.title}
               nombre={peliculaYSerie.name}
