@@ -1,14 +1,13 @@
 import { useEffect, useState } from "react";
 import Item from "./Item";
 import "../styles/ListaPeliculasYSeries.scss";
+import { urlBase, apiKey } from "../utils/variables";
 
 const ListaPeliculasYSeries = ({ titulo, url }) => {
   const [peliculasYSeries, setPeliculasYSeries] = useState([]);
 
   useEffect(() => {
-    fetch(
-      `https://api.themoviedb.org/3/${url}?api_key=0f992db40ce22ab302880645bfa455bf&language=es-ES&page=1`
-    )
+    fetch(`${urlBase}${url}?${apiKey}&language=es-ES&page=1`)
       .then((res) => res.json())
       .then((data) => setPeliculasYSeries(data.results));
   }, []);

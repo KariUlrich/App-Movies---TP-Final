@@ -1,16 +1,15 @@
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import "../styles/DetallePeliculaYSerie.scss";
-import defaultProps from "react-slick/lib/default-props";
+// import defaultProps from "react-slick/lib/default-props";
+import { urlBase, apiKey } from "../utils/variables";
 
 const DetallePeliculaYSerie = () => {
   const params = useParams();
   const [peliculaYSerie, setPeliculaYSerie] = useState([]);
 
   useEffect(() => {
-    fetch(
-      `https://api.themoviedb.org/3/movie/${params.idPYS}?api_key=0f992db40ce22ab302880645bfa455bf&language=es-ES`
-    )
+    fetch(`${urlBase}movie/${params.idPYS}?${apiKey}&language=es-ES`)
       .then((res) => res.json())
       .then((data) => setPeliculaYSerie(data));
     // console.log(data));

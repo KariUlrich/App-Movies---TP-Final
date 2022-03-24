@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { urlBase, apiKey } from "../utils/variables";
 
 const useFetchPYS = (tipo, categoria, page) => {
   const [peliYSeries, setPeliYSeries] = useState([]);
@@ -8,7 +9,7 @@ const useFetchPYS = (tipo, categoria, page) => {
   useEffect(() => {
     setIsLoading(true);
     fetch(
-      `https://api.themoviedb.org/3/${tipo}/${categoria}?api_key=0f992db40ce22ab302880645bfa455bf&language=es-ES&page=${page}`
+      `${urlBase}${tipo}/${categoria}?${apiKey}&language=es-ES&page=${page}`
     )
       .then((res) => res.json())
       .then((data) => {
