@@ -20,7 +20,7 @@ const PeliculasPopulares = () => {
   );
 
   return (
-    <div className="listado">
+    <div className="">
       <Loader isLoading={isLoading} />
       {!isLoading && (
         <Listado titulo="Películas Populares" peliculasYSeries={peliculas} />
