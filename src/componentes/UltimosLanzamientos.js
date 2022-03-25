@@ -20,11 +20,13 @@ const UltimosLanzamientos = () => {
             link={"/movie/now_playing/page/1"}
             titulo="Ultimos Lanzamientos de Peliculas"
             peliculasYSeries={cortarArrayPeliculas(peliculas)}
+            tipo="movie"
           />
           <PresentacionPeliculas
             link={"/tv/airing_today/page/1"}
             titulo="Ultimos Lanzamientos de Series"
             peliculasYSeries={cortarArrayPeliculas(series)}
+            tipo="tv"
           />
         </>
       )}

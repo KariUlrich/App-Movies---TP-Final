@@ -44,10 +44,9 @@ const Carousel = () => {
             <div className="slick-descripcion">
               <h3>{pelicula.title}</h3>
               <p>{pelicula.overview}</p>
-              <button>
-                <Link to={`/movie/:id/${pelicula.id}`}></Link>
-                Ver mas...
-              </button>
+              <Link to={`/movie/${pelicula.id}`}>
+                <p className="link-a-detalle">Ver Mas...</p>{" "}
+              </Link>
             </div>
           </div>
         ))}
@@ -57,7 +56,3 @@ const Carousel = () => {
 };
 
 export default Carousel;
-
-<button>
-  <Link to="/">Home</Link>
-</button>;

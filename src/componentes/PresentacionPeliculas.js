@@ -3,7 +3,7 @@ import Tarjeta from "./Tarjeta";
 import "../styles/PresentacionPelicula.scss";
 import { FaArrowCircleRight } from "react-icons/fa";
 
-const PresentacionPeliculas = ({ titulo, peliculasYSeries, link }) => {
+const PresentacionPeliculas = ({ titulo, peliculasYSeries, link, tipo }) => {
   return (
     <div className="contenedor-presentacion">
       <Link to={link}>
@@ -14,7 +14,7 @@ const PresentacionPeliculas = ({ titulo, peliculasYSeries, link }) => {
       </Link>
       <div className="contenedor-tarjeta">
         {peliculasYSeries.map((peliculaYSerie) => (
-          <Link key={peliculaYSerie.id} to={`/movie/${peliculaYSerie.id}`}>
+          <Link key={peliculaYSerie.id} to={`/${tipo}/${peliculaYSerie.id}`}>
             <Tarjeta
               titulo={peliculaYSerie.title}
               nombre={peliculaYSerie.name}

@@ -10,11 +10,13 @@ const Home = () => {
       <div className="lista-peliculas-series">
         <ListaPeliculasYSeries
           titulo="Peliculas Mejor Puntuadas"
-          url="movie/top_rated"
+          categoria="top_rated"
+          tipo="movie"
         />
         <ListaPeliculasYSeries
           titulo="Series Mejor Puntuadas"
-          url="tv/top_rated"
+          categoria="top_rated"
+          tipo="tv"
         />
       </div>
     </div>

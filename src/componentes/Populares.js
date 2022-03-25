@@ -19,11 +19,13 @@ const Populares = () => {
             link={"/movie/popular/page/1"}
             titulo="Peliculas Populares"
             peliculasYSeries={cortarArrayPeliculas(peliculas)}
+            tipo="movie"
           />
           <PresentacionPeliculas
             link={"/tv/popular/page/1"}
             titulo="Series Populares"
             peliculasYSeries={cortarArrayPeliculas(series)}
+            tipo="tv"
           />
         </>
       )}

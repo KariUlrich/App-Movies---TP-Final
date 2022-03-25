@@ -3,11 +3,11 @@ import Item from "./Item";
 import "../styles/ListaPeliculasYSeries.scss";
 import { urlBase, apiKey } from "../utils/variables";
 
-const ListaPeliculasYSeries = ({ titulo, url }) => {
+const ListaPeliculasYSeries = ({ titulo, tipo, categoria }) => {
   const [peliculasYSeries, setPeliculasYSeries] = useState([]);
 
   useEffect(() => {
-    fetch(`${urlBase}${url}?${apiKey}&language=es-ES&page=1`)
+    fetch(`${urlBase}${tipo}/${categoria}?${apiKey}&language=es-ES&page=1`)
       .then((res) => res.json())
       .then((data) => setPeliculasYSeries(data.results));
   }, []);
@@ -20,7 +20,7 @@ const ListaPeliculasYSeries = ({ titulo, url }) => {
           titulo={peliculaYSerie.title}
           nombre={peliculaYSerie.name}
           imagen={`https://image.tmdb.org/t/p/w200/${peliculaYSerie.poster_path}`}
-          link={`/movie/${peliculaYSerie.id}`}
+          link={`/${tipo}/${peliculaYSerie.id}`}
         />
       ))}
     </div>

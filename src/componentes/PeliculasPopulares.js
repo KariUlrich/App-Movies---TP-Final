@@ -23,7 +23,11 @@ const PeliculasPopulares = () => {
     <div className="">
       <Loader isLoading={isLoading} />
       {!isLoading && (
-        <Listado titulo="Películas Populares" peliculasYSeries={peliculas} />
+        <Listado
+          titulo="Películas Populares"
+          peliculasYSeries={peliculas}
+          tipo="movie"
+        />
       )}
       <Paginado
         handleClickPrev={handleClickPrev}

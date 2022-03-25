@@ -36,7 +36,7 @@ const App = () => {
             element={<SeriesUltimosLanzamientos />}
           />
           <Route path="/search" element={<Buscar />} />
-          <Route path="/movie/:idPYS" element={<DetallePeliculaYSerie />} />
+          <Route path="/:tipo/:idPYS" element={<DetallePeliculaYSerie />} />
         </Routes>
       </BrowserRouter>
       <Footer />

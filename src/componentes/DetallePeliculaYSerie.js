@@ -9,7 +9,7 @@ const DetallePeliculaYSerie = () => {
   const [peliculaYSerie, setPeliculaYSerie] = useState([]);
 
   useEffect(() => {
-    fetch(`${urlBase}movie/${params.idPYS}?${apiKey}&language=es-ES`)
+    fetch(`${urlBase}${params.tipo}/${params.idPYS}?${apiKey}&language=es-ES`)
       .then((res) => res.json())
       .then((data) => setPeliculaYSerie(data));
     // console.log(data));

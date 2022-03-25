@@ -22,6 +22,7 @@ const SeriesUltimosLanzamientos = () => {
         <Listado
           titulo="Series - Ultimos Lanzamientos"
           peliculasYSeries={series}
+          tipo="tv"
         />
       )}
       <Paginado

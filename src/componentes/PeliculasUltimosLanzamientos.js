@@ -26,6 +26,7 @@ const PeliculasUltimosLanzamientos = () => {
         <Listado
           titulo="Películas - Ultimos Lanzamientos"
           peliculasYSeries={peliculas}
+          tipo="movie"
         />
       )}
       <Paginado
