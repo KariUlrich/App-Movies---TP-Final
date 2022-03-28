@@ -24,16 +24,16 @@ const App = () => {
           <Route path="/new" element={<UltimosLanzamientos />} />
           <Route path="/popular" element={<Populares />} />
           <Route
-            path="/movie/popular/page/1"
+            path="/movie/popular/page/:page"
             element={<PeliculasPopulares />}
           />
-          <Route path="/tv/popular/page/1" element={<SeriesPopulares />} />
+          <Route path="/tv/popular/page/:page" element={<SeriesPopulares />} />
           <Route
-            path="/movie/now_playing/page/1"
+            path="/movie/now_playing/page/:page"
             element={<PeliculasUltimosLanzamientos />}
           />
           <Route
-            path="/tv/airing_today/page/1"
+            path="/tv/airing_today/page/:page"
             element={<SeriesUltimosLanzamientos />}
           />
           <Route path="/searchMovie" element={<BuscarPelicula />} />

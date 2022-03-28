@@ -4,19 +4,21 @@ import Loader from "./Loader";
 import Paginado from "./Paginado";
 import usePaginado from "../hook/usePaginado";
 import "../styles/PeliculasPopulares.scss";
+import { useParams } from "react-router-dom";
 
 const PeliculasPopulares = () => {
+  const params = useParams();
   const {
     page,
     handleClickNext,
     handleClickPrev,
     handleClickFirstPage,
     handleClickLastPage,
-  } = usePaginado();
+  } = usePaginado("movie", "popular");
   const [peliculas, isLoading, totalPages] = useFetchPYS(
     "movie",
     "popular",
-    page
+    params.page
   );
 
   return (

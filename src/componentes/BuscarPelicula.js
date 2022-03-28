@@ -4,21 +4,11 @@ import "../styles/Buscar.scss";
 import { BsSearch } from "react-icons/bs";
 import { urlBase, apiKey } from "../utils/variables";
 import Listado from "./Listado";
-// import Paginado from "./Paginado";
-// import usePaginado from "../hook/usePaginado";
 
 const BuscarPelicula = () => {
   const [peliculas, setPeliculas] = useState([]);
   const [searchParams, setSearchParams] = useSearchParams({ query: "" });
   const [valorDelInput, setValorDelInput] = useState("");
-  // const {
-  //   page,
-  //   handleClickNext,
-  //   handleClickPrev,
-  //   handleClickFirstPage,
-  //   handleClickLastPage,
-  // } = usePaginado();
-  // const [series, isLoading, totalPages] = useFetchPYS("tv", "popular", page);
 
   useEffect(() => {
     if (searchParams.get("query")) {
@@ -28,7 +18,9 @@ const BuscarPelicula = () => {
         )}&language=es-ES&page=1`
       )
         .then((res) => res.json())
-        .then((data) => setPeliculas(data.results));
+        .then((data) => {
+          setPeliculas(data.results);
+        });
     }
   }, [searchParams]);
 
@@ -61,14 +53,6 @@ const BuscarPelicula = () => {
         </button>
       </form>
       <Listado titulo={""} peliculasYSeries={peliculas} tipo="movie" />
-      {/* <Paginado
-        handleClickPrev={handleClickPrev}
-        handleClickNext={handleClickNext}
-        handleClickFirstPage={handleClickFirstPage}
-        handleClickLastPage={handleClickLastPage}
-        page={page}
-        totalPages={totalPages}
-      /> */}
     </div>
   );
 };
