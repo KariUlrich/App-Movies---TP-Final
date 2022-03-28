@@ -3,19 +3,23 @@ import Listado from "./Listado";
 import Loader from "./Loader";
 import Paginado from "./Paginado";
 import usePaginado from "../hook/usePaginado";
-// import { useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 // import "../styles/PeliculasPopulares.scss";
 
 const SeriesUltimosLanzamientos = () => {
-  // const params = useParams();
+  const params = useParams();
   const {
     page,
     handleClickNext,
     handleClickPrev,
     handleClickFirstPage,
     handleClickLastPage,
-  } = usePaginado();
-  const [series, isLoading, totalPages] = useFetchPYS("tv", "popular", page);
+  } = usePaginado("tv", "popular");
+  const [series, isLoading, totalPages] = useFetchPYS(
+    "tv",
+    "popular",
+    params.page
+  );
 
   return (
     <div className="">
