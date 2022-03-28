@@ -1,0 +1,24 @@
+@import "Variables";
+@import "Mixing";
+
+.contenedor-footer {
+  @include flex($direction: column);
+  background-color: $color-principal;
+  color: $color-secundario;
+  font-size: 18px;
+  margin-top: 30px;
+  p {
+    margin-bottom: 7px;
+  }
+  ul {
+    @include flex($direction: row);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    margin: 15px;
+    font-size: 25px;
+    padding: 0;
+  }
+}
