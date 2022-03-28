@@ -20,7 +20,10 @@ const Nav = () => {
           <Link to="/popular">Populares</Link>
         </li>
         <li>
-          <Link to="/search">Buscar</Link>
+          <Link to="/searchMovie">Buscar por Película</Link>
+        </li>
+        <li>
+          <Link to="/searchTv">Buscar por Serie</Link>
         </li>
       </ul>
     </div>
