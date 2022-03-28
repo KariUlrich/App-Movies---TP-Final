@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import Nav from "./componentes/Nav";
-import Buscar from "./componentes/Buscar";
+import BuscarPelicula from "./componentes/BuscarPelicula";
+import BuscarSerie from "./componentes/BuscarSerie";
 import Home from "./componentes/Home";
 import Populares from "./componentes/Populares";
 import PeliculasPopulares from "./componentes/PeliculasPopulares";
@@ -35,7 +36,8 @@ const App = () => {
             path="/tv/airing_today/page/1"
             element={<SeriesUltimosLanzamientos />}
           />
-          <Route path="/search" element={<Buscar />} />
+          <Route path="/searchMovie" element={<BuscarPelicula />} />
+          <Route path="/searchTv" element={<BuscarSerie />} />
           <Route path="/:tipo/:idPYS" element={<DetallePeliculaYSerie />} />
         </Routes>
       </BrowserRouter>
