@@ -42,6 +42,7 @@ const BuscarSerie = () => {
           className="input-peli"
           type="text"
           placeholder="ingresa el nombre..."
+          aria-label="buscar serie"
           onChange={handleChange}
           value={valorDelInput}
         ></input>
