@@ -43,10 +43,10 @@ const DetallePeliculaYSerie = () => {
           </h2>
           <p>Puntaje: {peliculaYSerie.vote_average}</p>
           <p>Duración: {peliculaYSerie.runtime} min</p>
-          <h3>Descripción</h3>
+          <h3>Descripción:</h3>
           <p>{peliculaYSerie.overview}</p>
           <h4> Géneros:</h4>
-          <div>
+          <div className="generos">
             {peliculaYSerie.genres?.map((genero) => (
               <p key={genero.id}>{genero.name}</p>
             ))}
