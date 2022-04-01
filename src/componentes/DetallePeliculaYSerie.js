@@ -15,6 +15,7 @@ const DetallePeliculaYSerie = () => {
     // console.log(data));
   }, []);
   console.log(peliculaYSerie.poster_path);
+  console.log(peliculaYSerie.backdrop_path);
 
   return (
     <div className="contenedor-imagen-detalle-fondo">
@@ -23,7 +24,9 @@ const DetallePeliculaYSerie = () => {
         style={{
           backgroundImage:
             "url(" +
-            `https://image.tmdb.org/t/p/original/${peliculaYSerie.backdrop_path}` +
+            (peliculaYSerie.backdrop_path
+              ? `https://image.tmdb.org/t/p/original/${peliculaYSerie.backdrop_path}`
+              : "https://kinsta.com/es/wp-content/uploads/sites/8/2018/08/divertido-404-page.jpg") +
             ")",
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
@@ -33,7 +36,11 @@ const DetallePeliculaYSerie = () => {
       <div className="contendor-detalle">
         <div className="contenedor-imagen-chica">
           <img
-            src={`https://image.tmdb.org/t/p/w300/${peliculaYSerie.poster_path}`}
+            src={
+              peliculaYSerie.poster_path
+                ? `https://image.tmdb.org/t/p/w300/${peliculaYSerie.poster_path}`
+                : "https://m.media-amazon.com/images/I/61FQCSP7ZIL._SS500_.jpg"
+            }
             alt="detalle de pelicula card"
           ></img>
         </div>
