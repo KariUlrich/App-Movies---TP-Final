@@ -3,7 +3,6 @@ import PresentacionPeliculas from "./PresentacionPeliculas";
 import Loader from "./Loader";
 import "../styles/UltimosLanzamientos.scss";
 import { cortarArrayPeliculas } from "../utils/variables";
-import { useState } from "react";
 
 const UltimosLanzamientos = () => {
   const [peliculas, isLoading] = useFetchPYS("movie", "now_playing");

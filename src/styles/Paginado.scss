@@ -3,12 +3,15 @@
 
 .botones-paginado {
   @include flex($direction: row);
+  text-align: center;
   margin-top: 10px;
   color: $color-principal;
   font-size: 22px;
 
   button {
-    padding: 5px;
+    display: flex;
+    text-align: center;
+    padding: 2px;
     margin: 20px;
     background-color: $color-principal;
     border-radius: 50%;
@@ -18,7 +21,17 @@
     cursor: pointer;
   }
 }
-.boton-paginado {
-  font-size: 50px;
+.icono-paginado {
+  font-size: 40px;
   color: $color-secundario;
+}
+
+// Responsive
+@media screen and (max-width: 550px) {
+  .icono-paginado {
+    font-size: 25px;
+  }
+  span {
+    font-size: 15px;
+  }
 }

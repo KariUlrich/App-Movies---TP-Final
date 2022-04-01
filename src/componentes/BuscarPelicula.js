@@ -7,7 +7,7 @@ import Listado from "./Listado";
 
 const BuscarPelicula = () => {
   const [peliculas, setPeliculas] = useState([]);
-  const [searchParams, setSearchParams] = useSearchParams({ query: "" });
+  const [searchParams, setSearchParams] = useSearchParams({ query: "Red" });
   const [valorDelInput, setValorDelInput] = useState("");
 
   useEffect(() => {
@@ -40,18 +40,20 @@ const BuscarPelicula = () => {
     <div className="formulario">
       <form onSubmit={handleSubmit}>
         <h3>Busca tu película</h3>
-        <input
-          className="input-peli"
-          type="text"
-          placeholder="ingresa el nombre..."
-          aria-label="buscar pelicula"
-          onChange={handleChange}
-          value={valorDelInput}
-        ></input>
-        <button aria-label="boton buscar" type="submit" onClick={handleClick}>
-          {" "}
-          <BsSearch />{" "}
-        </button>
+        <div className="div-busqueda">
+          <input
+            className="input-peli"
+            type="text"
+            placeholder="ingresa el nombre..."
+            aria-label="buscar pelicula"
+            onChange={handleChange}
+            value={valorDelInput}
+          ></input>
+          <button aria-label="boton buscar" type="submit" onClick={handleClick}>
+            {" "}
+            <BsSearch />{" "}
+          </button>
+        </div>
       </form>
       <Listado titulo={""} peliculasYSeries={peliculas} tipo="movie" />
     </div>

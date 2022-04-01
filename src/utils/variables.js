@@ -9,4 +9,4 @@ export const mail = "https://outlook.live.com/";
 export const linkedin = "https://www.linkedin.com/in/karina-ulrich-37b24616";
 export const gitHub = "https://github.com/KariUlrich";
 
-export const cortarArrayPeliculas = (array) => array.slice(0, 5);
+export const cortarArrayPeliculas = (array) => array.slice(0, 4);
