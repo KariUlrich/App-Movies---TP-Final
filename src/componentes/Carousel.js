@@ -43,7 +43,7 @@ const Carousel = () => {
             ></div>
             <div className="slick-descripcion">
               <h3>{pelicula.title}</h3>
-              <p>{pelicula.overview}</p>
+              <p className="descip">{pelicula.overview}</p>
               <Link to={`/movie/${pelicula.id}`}>
                 <p className="link-a-detalle">Ver Mas...</p>{" "}
               </Link>

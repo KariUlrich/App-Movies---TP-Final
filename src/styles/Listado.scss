@@ -11,5 +11,6 @@
 .listado {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   margin-left: $margen-izq;
 }

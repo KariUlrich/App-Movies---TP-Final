@@ -7,16 +7,20 @@
   h3 {
     margin-top: 50px;
     font-size: 30px;
+    color: $color-principal;
   }
-
+  .div-busqueda {
+    display: flex;
+    align-items: center;
+  }
   button {
     background-color: $color-principal;
     color: white;
-    font-size: 40px;
+    font-size: 35px;
     padding: 10px;
     padding-bottom: 4px;
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
     border-radius: 25px;
     margin: 0px;
     cursor: pointer;
@@ -32,4 +36,17 @@
   font-size: 20px;
   margin-right: 15px;
   outline: none;
+}
+
+@media screen and (max-width: 600px) {
+  .formulario {
+    button {
+      font-size: 25px;
+      width: 50px;
+      height: 50px;
+    }
+  }
+  .input-peli {
+    width: 300px;
+  }
 }

@@ -22,29 +22,29 @@ const Paginado = ({
         disabled={page === 1}
         aria-label="boton first page"
       >
-        <BiFirstPage className="boton-paginado" />
+        <BiFirstPage className="icono-paginado" />
       </button>
       <button
         onClick={handleClickPrev}
         disabled={page === 1}
         aria-label="boton anterior"
       >
-        <BiSkipPrevious className="boton-paginado" />
+        <BiSkipPrevious className="icono-paginado" />
       </button>
-      Página {page}
+      <span>Página {page}</span>
       <button
         onClick={handleClickNext}
         disabled={totalPages > 500 ? page === 500 : page === totalPages}
         aria-label="boton siguiente"
       >
-        <BiSkipNext className="boton-paginado" />
+        <BiSkipNext className="icono-paginado" />
       </button>
       <button
         disabled={totalPages > 500 ? page === 500 : page === totalPages}
         aria-label="boton ultima pagina"
         onClick={() => handleClickLastPage(totalPages > 500 ? 500 : totalPages)}
       >
-        <BiLastPage className="boton-paginado" />
+        <BiLastPage className="icono-paginado" />
       </button>
     </div>
   );
