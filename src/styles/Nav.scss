@@ -12,7 +12,6 @@
   li {
     display: flex;
     text-align: center;
-    padding: 20px;
     margin: 20px;
     background-color: $color-principal;
     border: none;
@@ -22,6 +21,17 @@
 a {
   text-decoration: none;
   color: rgb(240, 240, 174);
+}
+a:hover {
+  color: rgb(11, 11, 44);
+}
+a:active {
+  border-radius: 20px;
+  color: rgb(11, 11, 44);
+}
+a:focus {
+  outline: none;
+  color: rgb(11, 11, 44);
 }
 
 .imagen-movie {
