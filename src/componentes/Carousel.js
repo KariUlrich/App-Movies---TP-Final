@@ -34,7 +34,9 @@ const Carousel = () => {
               style={{
                 backgroundImage:
                   "url(" +
-                  `https://image.tmdb.org/t/p/original/${pelicula.backdrop_path}` +
+                  (pelicula.backdrop_path
+                    ? `https://image.tmdb.org/t/p/original/${pelicula.backdrop_path}`
+                    : "https://www.seoptimer.com/es/blog/wp-content/uploads/2015/07/Destacada.jpg") +
                   ")",
                 backgroundRepeat: "no-repeat",
                 backgroundSize: "cover",

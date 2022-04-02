@@ -26,7 +26,7 @@ const DetallePeliculaYSerie = () => {
             "url(" +
             (peliculaYSerie.backdrop_path
               ? `https://image.tmdb.org/t/p/original/${peliculaYSerie.backdrop_path}`
-              : "https://kinsta.com/es/wp-content/uploads/sites/8/2018/08/divertido-404-page.jpg") +
+              : "https://www.seoptimer.com/es/blog/wp-content/uploads/2015/07/Destacada.jpg") +
             ")",
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
@@ -39,7 +39,7 @@ const DetallePeliculaYSerie = () => {
             src={
               peliculaYSerie.poster_path
                 ? `https://image.tmdb.org/t/p/w300/${peliculaYSerie.poster_path}`
-                : "https://m.media-amazon.com/images/I/61FQCSP7ZIL._SS500_.jpg"
+                : "https://www.seoptimer.com/es/blog/wp-content/uploads/2015/07/Destacada.jpg"
             }
             alt="detalle de pelicula card"
           ></img>
