@@ -9,6 +9,7 @@ import SeriesPopulares from "./componentes/SeriesPopulares";
 import UltimosLanzamientos from "./componentes/UltimosLanzamientos";
 import PeliculasUltimosLanzamientos from "./componentes/PeliculasUltimosLanzamientos";
 import SeriesUltimosLanzamientos from "./componentes/SeriesUltimosLanzamientos";
+import Error404 from "./componentes/Error404";
 
 import Footer from "./componentes/Footer";
 import DetallePeliculaYSerie from "./componentes/DetallePeliculaYSerie";
@@ -39,6 +40,7 @@ const App = () => {
           <Route path="/searchMovie" element={<BuscarPelicula />} />
           <Route path="/searchTv" element={<BuscarSerie />} />
           <Route path="/:tipo/:idPYS" element={<DetallePeliculaYSerie />} />
+          <Route path="*" element={<Error404 />} />
         </Routes>
       </BrowserRouter>
       <Footer />
