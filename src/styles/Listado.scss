@@ -3,7 +3,7 @@
 
 .contenedor-listado {
   @include flex($direction: column);
-  margin-top: $margen-top;
+  margin-top: $margen30;
   h2 {
     color: $color-principal;
   }
@@ -12,5 +12,5 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-left: $margen-izq;
+  margin-left: $margen20;
 }

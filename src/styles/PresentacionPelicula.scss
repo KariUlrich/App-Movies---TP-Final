@@ -1,8 +1,9 @@
 @import "Variables";
+
 .contenedor-presentacion {
-  margin-left: $margen-izq;
-  margin-top: $margen-top;
-  margin-bottom: 30px;
+  margin-left: $margen20;
+  margin-top: $margen30;
+  margin-bottom: $margen30;
 }
 
 .contenedor-tarjeta {
@@ -18,7 +19,7 @@
     height: 50px;
     color: $color-principal;
     opacity: 0.8;
-    margin-right: 20px;
+    margin-right: $margen20;
   }
   h2 {
     margin-left: 35px;
@@ -27,5 +28,5 @@
   }
 }
 .icono-listado:hover {
-  color: rgb(11, 11, 44);
+  color: $color-efectos;
 }

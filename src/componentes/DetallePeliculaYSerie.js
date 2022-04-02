@@ -61,3 +61,5 @@ const DetallePeliculaYSerie = () => {
 };
 
 export default DetallePeliculaYSerie;
+
+//

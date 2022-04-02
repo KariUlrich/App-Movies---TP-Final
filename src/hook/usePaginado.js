@@ -18,7 +18,6 @@ const usePaginado = (tipo, categoria) => {
 
   const handleClickNext = () => {
     setPage(page + 1);
-    console.log(page);
     navigate(`/${tipo}/${categoria}/page/${page + 1}`);
   };
   const handleClickPrev = () => {

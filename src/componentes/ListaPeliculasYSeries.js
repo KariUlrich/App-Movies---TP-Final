@@ -28,5 +28,3 @@ const ListaPeliculasYSeries = ({ titulo, tipo, categoria }) => {
 };
 
 export default ListaPeliculasYSeries;
-
-// link={`/movie/:idPYS/${peliculaYSerie.id}`}

@@ -22,27 +22,25 @@
   font-size: 18px;
   background-color: gray;
   opacity: 0.8;
-  text-overflow: ellipsis;
-  overflow: hidden;
   h3 {
     margin: 10px;
   }
   .link-a-detalle {
-    padding: 20px;
-    margin: 20px;
+    padding: $padding20;
+    margin: $margen20;
     width: 200px;
     background-color: $color-principal;
     border: none;
-    font-size: 18px;
+    font-size: $font-size-standard;
   }
 }
 
 a:hover {
-  color: rgb(11, 11, 44);
+  color: $color-efectos;
 }
 a:focus {
   outline: none;
-  color: rgb(11, 11, 44);
+  color: $color-efectos;
 }
 
 // Responsive

@@ -4,7 +4,6 @@ import Loader from "./Loader";
 import Paginado from "./Paginado";
 import usePaginado from "../hook/usePaginado";
 import { useParams } from "react-router-dom";
-// import "../styles/PeliculasPopulares.scss";
 
 const SeriesUltimosLanzamientos = () => {
   const params = useParams();
