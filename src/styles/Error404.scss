@@ -2,31 +2,30 @@
 @import "Mixing";
 
 .contendor-error {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  @include flex($direction: column);
   width: 100%;
   position: relative;
   img {
     width: 100%;
   }
   button {
+    @include flex($direction: row);
     position: absolute;
     top: 250px;
     left: 800px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 18px;
+    font-family: $fuente;
+    font-size: $font-size-standard;
     font-weight: bold;
     width: 100px;
     height: 50px;
     padding: 2px;
     background-color: $color-principal;
+    color: $color-secundario;
     border-radius: 30%;
     border: none;
     cursor: pointer;
   }
+}
+button:hover {
+  color: $color-efectos;
 }

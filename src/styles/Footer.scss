@@ -6,8 +6,8 @@
   text-align: center;
   background-color: $color-principal;
   color: $color-secundario;
-  font-size: 18px;
-  padding-top: 10px;
+  font-size: $font-size-standard;
+  padding-top: $padding10;
   p {
     margin-bottom: 7px;
   }

@@ -5,8 +5,8 @@
   @include flex($direction: column);
   text-align: center;
   h3 {
-    margin-top: 50px;
-    font-size: 30px;
+    margin-top: $margen50;
+    font-size: $font-size-3;
     color: $color-principal;
   }
   .div-busqueda {
@@ -16,8 +16,8 @@
   button {
     background-color: $color-principal;
     color: white;
-    font-size: 35px;
-    padding: 10px;
+    font-size: $font-size-4;
+    padding: $padding10;
     padding-bottom: 4px;
     width: 60px;
     height: 60px;
@@ -33,12 +33,12 @@
   width: 400px;
   height: 30px;
   padding: 5px;
-  font-size: 20px;
+  font-size: $font-size-1;
   margin-right: 15px;
   outline: none;
 }
 button:hover {
-  color: rgb(11, 11, 44);
+  color: $color-efectos;
 }
 
 @media screen and (max-width: 600px) {

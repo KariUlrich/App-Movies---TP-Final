@@ -6,20 +6,23 @@
   text-align: center;
   margin-top: 10px;
   color: $color-principal;
-  font-size: 22px;
+  font-size: $font-size-2;
 
   button {
     display: flex;
     text-align: center;
     padding: 2px;
-    margin: 20px;
+    margin: $margen20;
     background-color: $color-principal;
     border-radius: 50%;
     border: none;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 18px;
+    font-family: $fuente;
+    font-size: $font-size-standard;
     cursor: pointer;
   }
+}
+.icono-paginado:hover {
+  color: $color-efectos;
 }
 .icono-paginado {
   font-size: 40px;
@@ -29,7 +32,7 @@
 // Responsive
 @media screen and (max-width: 550px) {
   .icono-paginado {
-    font-size: 25px;
+    font-size: $font-size-2;
   }
   span {
     font-size: 15px;

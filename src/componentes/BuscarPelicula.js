@@ -7,7 +7,9 @@ import Listado from "./Listado";
 
 const BuscarPelicula = () => {
   const [peliculas, setPeliculas] = useState([]);
-  const [searchParams, setSearchParams] = useSearchParams({ query: "Red" });
+  const [searchParams, setSearchParams] = useSearchParams({
+    query: "Red",
+  });
   const [valorDelInput, setValorDelInput] = useState("");
 
   useEffect(() => {

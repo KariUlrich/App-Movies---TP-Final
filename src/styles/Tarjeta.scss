@@ -14,13 +14,14 @@
   }
   h3 {
     color: $color-principal;
-    font-size: 18px;
+    font-size: $font-size-standard;
     font-weight: bold;
     text-align: center;
+    margin: 18px 0px;
   }
 }
 .tarjeta:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 .tarjeta:active {
   box-shadow: 15px 15px 10px -6px $color-principal;

@@ -22,5 +22,3 @@ const Listado = ({ titulo, peliculasYSeries, tipo }) => {
 };
 
 export default Listado;
-
-// {`/movie/:idPYS/${peliculaYSerie.id}
