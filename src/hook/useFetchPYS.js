@@ -17,7 +17,7 @@ const useFetchPYS = (tipo, categoria, page) => {
         setIsLoading(false);
         setTotalPages(data.total_pages);
       });
-  }, [page]);
+  }, [tipo, categoria, page]);
 
   return [peliYSeries, isLoading, totalPages];
 };

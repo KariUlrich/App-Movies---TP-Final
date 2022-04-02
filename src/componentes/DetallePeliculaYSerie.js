@@ -1,7 +1,6 @@
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import "../styles/DetallePeliculaYSerie.scss";
-// import defaultProps from "react-slick/lib/default-props";
 import { urlBase, apiKey } from "../utils/variables";
 
 const DetallePeliculaYSerie = () => {
@@ -12,10 +11,7 @@ const DetallePeliculaYSerie = () => {
     fetch(`${urlBase}${params.tipo}/${params.idPYS}?${apiKey}&language=es-ES`)
       .then((res) => res.json())
       .then((data) => setPeliculaYSerie(data));
-    // console.log(data));
-  }, []);
-  console.log(peliculaYSerie.poster_path);
-  console.log(peliculaYSerie.backdrop_path);
+  }, [params.tipo, params.idPYS]);
 
   return (
     <div className="contenedor-imagen-detalle-fondo">

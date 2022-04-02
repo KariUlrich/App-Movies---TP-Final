@@ -10,7 +10,7 @@ const ListaPeliculasYSeries = ({ titulo, tipo, categoria }) => {
     fetch(`${urlBase}${tipo}/${categoria}?${apiKey}&language=es-ES&page=1`)
       .then((res) => res.json())
       .then((data) => setPeliculasYSeries(data.results));
-  }, []);
+  }, [tipo, categoria]);
   return (
     <div className="lista">
       <h2>{titulo}</h2>
