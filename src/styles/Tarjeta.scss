@@ -19,3 +19,9 @@
     text-align: center;
   }
 }
+.tarjeta:hover {
+  transform: scale(1.1);
+}
+.tarjeta:active {
+  box-shadow: 15px 15px 10px -6px $color-principal;
+}
