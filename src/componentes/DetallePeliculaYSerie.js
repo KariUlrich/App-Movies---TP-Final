@@ -17,7 +17,7 @@ const DetallePeliculaYSerie = () => {
           navigate("/404");
         }
       });
-  }, [params.tipo, params.idPYS]);
+  }, [params.tipo, params.idPYS, navigate]);
 
   return (
     <div className="contenedor-imagen-detalle-fondo">
