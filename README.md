@@ -1,6 +1,9 @@
 # TP final en ADA
 
-## Buscador de Series & Peliculas
+## Buscador de Series & Películas
+
+![imagen Rick & Morty](pictures/logo.svg)
+![imagen Rick & Morty](pictures/themoviedb.jpg)
 
 ### Comenzando a utilizar React con APIs, sumadas a las tecnologías ya aprendidas:
 
@@ -24,15 +27,15 @@
 
 ### Funciones de la APP:
 
-- Ver las peliculas y series, por ultimos lanzamiento y populares
+- Ver las películas y series, por últimos lanzamientos y populares
 
-- Realizar busquedas por nombre de pelicula y serie
+- Realizar búsquedas por nombre de pelicula y serie
 
-- Ver la descripcion de cada pelicula y serie
+- Ver la descripción de cada película y serie
 
 - Pagidado de las secciones principales
 
-- Carrulsel con los proximos lanzamientos de Peliculas
+- Carousel con los próximos lanzamientos de películas
 
 - Ruteo de las secciones
 
