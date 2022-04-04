@@ -68,3 +68,14 @@ a:focus {
     }
   }
 }
+
+@media screen and (max-width: 430px) {
+  .nav-bar {
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 90px;
+      height: 90px;
+    }
+  }
+}
