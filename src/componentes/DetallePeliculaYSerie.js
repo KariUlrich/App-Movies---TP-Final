@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import "../styles/DetallePeliculaYSerie.scss";
 import { urlBase, apiKey } from "../utils/variables";
@@ -6,11 +6,17 @@ import { urlBase, apiKey } from "../utils/variables";
 const DetallePeliculaYSerie = () => {
   const params = useParams();
   const [peliculaYSerie, setPeliculaYSerie] = useState([]);
+  const navigate = useNavigate();
 
   useEffect(() => {
     fetch(`${urlBase}${params.tipo}/${params.idPYS}?${apiKey}&language=es-ES`)
       .then((res) => res.json())
-      .then((data) => setPeliculaYSerie(data));
+      .then((data) => {
+        setPeliculaYSerie(data);
+        if (data.success === false) {
+          navigate("/404");
+        }
+      });
   }, [params.tipo, params.idPYS]);
 
   return (
