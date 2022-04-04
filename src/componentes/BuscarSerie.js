@@ -15,7 +15,7 @@ const BuscarSerie = () => {
   useEffect(() => {
     if (searchParams.get("query")) {
       fetch(
-        `${urlBase}search/tv/?${apiKey}&query=${searchParams.get(
+        `${urlBase}search/tv?${apiKey}&query=${searchParams.get(
           "query"
         )}&language=es-ES&page=1`
       )

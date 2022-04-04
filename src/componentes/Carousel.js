@@ -10,7 +10,7 @@ const Carousel = () => {
   const [peliculas, setPeliculas] = useState([]);
 
   useEffect(() => {
-    fetch(`${urlBase}movie/upcoming/?${apiKey}&language=es-ES&page=1`)
+    fetch(`${urlBase}movie/upcoming?${apiKey}&language=es-ES&page=1`)
       .then((res) => res.json())
       .then((data) => setPeliculas(data.results));
   }, []);

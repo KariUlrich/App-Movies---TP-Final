@@ -15,7 +15,7 @@ const BuscarPelicula = () => {
   useEffect(() => {
     if (searchParams.get("query")) {
       fetch(
-        `${urlBase}search/movie/?${apiKey}&query=${searchParams.get(
+        `${urlBase}search/movie?${apiKey}&query=${searchParams.get(
           "query"
         )}&language=es-ES&page=1`
       )
