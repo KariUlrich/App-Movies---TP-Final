@@ -4,7 +4,7 @@
 
 <!-- ![imagen logo](pictures/logo.svg) -->
 
-![imagen The Movie DB](pictures/themoviedb.jpg)
+![imagen The Movie DB](https://www.google.com/url?sa=i&url=https%3A%2F%2Ftwitter.com%2Fthemoviedb%3Flang%3Dzh-Hant&psig=AOvVaw3Zbm9axHAPDaTGMbnL04l-&ust=1649201895020000&source=images&cd=vfe&ved=0CAoQjRxqFwoTCJi-3OjK-_YCFQAAAAAdAAAAABAE)
 
 ### Comenzando a utilizar React con APIs, sumadas a las tecnologías ya aprendidas:
 
