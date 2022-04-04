@@ -2,8 +2,9 @@
 
 ## Buscador de Series & Películas
 
-![imagen Rick & Morty](pictures/logo.svg)
-![imagen Rick & Morty](pictures/themoviedb.jpg)
+<!-- ![imagen logo](pictures/logo.svg) -->
+
+![imagen The Movie DB](pictures/themoviedb.jpg)
 
 ### Comenzando a utilizar React con APIs, sumadas a las tecnologías ya aprendidas:
 
