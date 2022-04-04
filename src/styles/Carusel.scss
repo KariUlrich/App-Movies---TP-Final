@@ -84,3 +84,10 @@ a:focus {
     }
   }
 }
+@media screen and (max-width: 380px) {
+  .slick-descripcion {
+    .link-a-detalle {
+      width: 150px;
+    }
+  }
+}
