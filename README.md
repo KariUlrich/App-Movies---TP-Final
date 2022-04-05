@@ -4,7 +4,7 @@
 
 <!-- ![imagen logo](pictures/logo.svg) -->
 
-![imagen The Movie DB](pictures/imagenreadme.webp)
+![imagen The Movie DB](pictures/imagen.jpg)
 
 ### Comenzando a utilizar React con APIs, sumadas a las tecnologías ya aprendidas:
 
