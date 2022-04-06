@@ -2,7 +2,7 @@
 
 ## Buscador de Series & Películas
 
-![imagen The Movie DB](src/pictures/imagenreadme.jpg)
+![imagen The Movie DB](src/pictures/readme.webp)
 
 ### Comenzando a utilizar React con APIs, sumadas a las tecnologías ya aprendidas:
 
