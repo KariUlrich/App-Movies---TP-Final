@@ -9,6 +9,7 @@ const DetallePeliculaYSerie = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
+    // podrias usar un hook aqui
     fetch(`${urlBase}${params.tipo}/${params.idPYS}?${apiKey}&language=es-ES`)
       .then((res) => res.json())
       .then((data) => {

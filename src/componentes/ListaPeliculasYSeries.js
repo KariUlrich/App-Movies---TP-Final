@@ -7,6 +7,7 @@ const ListaPeliculasYSeries = ({ titulo, tipo, categoria }) => {
   const [peliculasYSeries, setPeliculasYSeries] = useState([]);
 
   useEffect(() => {
+    //podrias usar un hook aqui
     fetch(`${urlBase}${tipo}/${categoria}?${apiKey}&language=es-ES&page=1`)
       .then((res) => res.json())
       .then((data) => setPeliculasYSeries(data.results));
